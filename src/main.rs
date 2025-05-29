@@ -32,11 +32,11 @@ const AHH: &'static [Test2] = &[
 // new URLSearchParams(window.location.search);
 // ehp is broken for some reason (8/31/2024)
 fn main() {
-    let start_localhost = true;
-    if start_localhost{
-        yew::start_app::<website::RootComponent>();
-        return
-    }
+    // Set your weapon here
+    let weapon = WynnItem::OAK_WOOD_DAGGER;
+
+    // Initalize items to use in the search
+    // [helmet, chestplate, leggings, boots, ring1, ring2, bracelet, necklace]
 
     println!("Hello, world!");
 
